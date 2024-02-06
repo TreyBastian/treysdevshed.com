@@ -12,52 +12,63 @@
 </head>
 
 <body>
-    <header>
-        <img id="header-image"
-            srcset="./images/dev_shed@512.png 512w,./images/dev_shed@768.png 768w, ./images/dev_shed.png 1024w"
-            src="./images/dev_shed.png" alt="Trey's Dev Shed Shelf" class="show" />
-
-        <div id="twitch-video" class="hide"></div>
-    </header>
     <main>
-        <nav aria-label="social">
-            <a href="https://www.twitch.tv/treysdevshed">
-                Twitch
-            </a>
-            <a href="https://www.youtube.com/@treysdevshed">
-                YouTube
-            </a>
-            <a href="https://www.x.com/treysdevshed">
-                X
-            </a>
-            <a href="https://www.instagram.com/treysdevshed">
-                Instagram
-            </a>
-        </nav>
-        <article aria-label="about me">
-            <img src="./images/me.jpg" alt="'Picture of Trey" />
-            <p>👋 Hi, I'm Trey. I make games out of my shed. I used to be a startup founder, a USAF veteren who
-                worked
-                in cyber security and operational security. I've been a software dev in some capacity for over 20
-                years.
-                <br />
-                <br />
-                Come check out my streams where we are making games on <a href="https://www.twitch.tv/treysdevshed"
-                    target="_blank"">Twitch</a> or <a href=" https://www.youtube.com/@treysdevshed" target="_blank"">Youtube</a> Monday through Friday at 9AM GMT
-            </p>
-        </article>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="about" aria-label="about me">
+                    <img src="./images/me.jpg" alt="'Picture of Trey" />
+                    <p><strong>👋 Hi, I'm Trey</strong></p>
+                    <p>I make games out of my shed. I used to be a startup founder, a
+                        USAF veteren who
+                        worked in cyber security and operational security. I've been a software dev in some capacity for
+                        over
+                        20 years.</p>
+
+                </div>
+                <img srcset="./images/dev_shed@512.png 512w,./images/dev_shed@768.png 768w, ./images/dev_shed.png 1024w"
+                    src="./images/dev_shed.png" alt="Trey's Dev Shed Shelf" class="show" />
+
+                <div id="twitch-video" class="hide"></div>
+            </div>
+        </section>
+        <h1>Check out my socials</h1>
+        <ul class="social">
+            <li><a href="https://x.com/treybastian" target="_blank"><svg viewBox="0 0 1200 1227" aria-hidden="true">
+                        <path
+                            d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
+                            fill="white" />
+                    </svg></a></li>
+            <li><a href="https://twitch.tv/treybastian" target="_blank"><svg width="800px" height="800px"
+                        viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path fill="#ffffff" d="M13 7.5l-2 2H9l-1.75 1.75V9.5H5V2h8v5.5z" />
+                        <g fill="#9146FF">
+                            <path
+                                d="M4.5 1L2 3.5v9h3V15l2.5-2.5h2L14 8V1H4.5zM13 7.5l-2 2H9l-1.75 1.75V9.5H5V2h8v5.5z" />
+                            <path d="M11.5 3.75h-1v3h1v-3zM8.75 3.75h-1v3h1v-3z" />
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="https://youtube.com/@TreyBastian" target="_blank"><svg viewBox="0 0 32 32"
+                        style="color: #ff0000" aria-hidden="true">
+                        <title>Subscribe to @TreysDevShed on YouTube.</title>
+                        <path fill="currentColor"
+                            d="M31.328 8.271a4.006 4.006 0 0 0-2.787-2.781c-2.495-.667-12.525-.667-12.525-.667S6.005 4.807 3.484 5.49A4.005 4.005 0 0 0 .703 8.271a41.574 41.574 0 0 0-.697 7.745 42.136 42.136 0 0 0 .697 7.708 4.022 4.022 0 0 0 2.781 2.787c2.495.667 12.532.667 12.532.667s10.005 0 12.525-.667a4.023 4.023 0 0 0 2.787-2.787c.459-2.541.683-5.125.667-7.708.016-2.6-.203-5.188-.667-7.745zM12.812 20.803v-9.595l8.349 4.808z" />
+                    </svg>
+                </a></li>
+        </ul>
     </main>
     <footer>
         &copy; 2024 Trey's Dev Shed
     </footer>
     <script async src=" https://www.googletagmanager.com/gtag/js?id=G-G4X9QSSSKZ"></script>
-                    <script>
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag() { dataLayer.push(arguments); }
-                        gtag('js', new Date());
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                        gtag('config', 'G-G4X9QSSSKZ');
-                    </script>
+        gtag('config', 'G-G4X9QSSSKZ');
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 const options = {
-    channel: "treysdevshed",
+    channel: "treybastian",
     height: 576,
     width: '100%',
     layout: 'video',
