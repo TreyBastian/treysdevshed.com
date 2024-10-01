@@ -1,0 +1,9 @@
+.logo {
+  height: 1rem;
+  width: auto;
+
+  svg {
+    height: inherit;
+    width: inherit;
+  }
+}

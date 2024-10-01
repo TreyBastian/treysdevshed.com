@@ -1,0 +1,7 @@
+<nav class="socials" aria-label="Social Media Links">
+  <% site.data.socials.each do |social| %>
+    <a href="<%= social.url %>" target="_blank" aria-label="<%= social.name %>">
+      <%= render "icons/#{social.icon}" %>
+        <% end %>
+    </a>
+</nav>

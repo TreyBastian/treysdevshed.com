@@ -1,0 +1,17 @@
+header {
+  background-color: var(--devshed-blue);
+  color: var(--white);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .socials {
+    --social-height: 2rem;
+    margin-left: auto;
+  }
+
+  .logo {
+    height: 5rem;
+  }
+}

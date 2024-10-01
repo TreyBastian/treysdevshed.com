@@ -1,0 +1,94 @@
+@import "_footer.css";
+@import "_socials.css";
+@import "_header.css";
+@import "_logo.css";
+@import "_navbar.css";
+
+:root {
+  --devshed-blue: #000c19;
+  --devshed-blue-light: #003166;
+  --light-blue: #00b3d6;
+  --light-blue-light: #0ad6ff;
+  --black: #0a0a0a;
+  --white: #fafafa;
+  --border-radius: 0.75rem;
+  --primary: var(--devshed-blue);
+  --primary-inverse: var(--white);
+  --primary-hover: var(--devshed-blue-light);
+  --bg: var(--white);
+  --fg: var(--black);
+  --glow: 0 0 1.5rem var(--light-blue);
+
+  @media (prefers-color-scheme: dark) {
+    --bg: var(--devshed-blue);
+    --fg: var(--white);
+    --primary: var(--light-blue);
+    --primary-inverse: var(--black);
+    --primary-hover: var(--light-blue-light);
+  }
+}
+
+html {
+  height: 100%;
+  line-height: 1.5;
+  font-size: 1.15rem;
+
+  text-size-adjust: 100%;
+  font-smooth: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background: var(--body-background);
+  color: var(--fg);
+  background-color: var(--bg);
+  font-family:
+    BlinkMacSystemFont,
+    -apple-system,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    "Helvetica",
+    "Arial",
+    sans-serif;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--primary);
+  transition:
+    color 0.15s ease-in-out,
+    shadow 0.15s ease-in-out;
+  &:hover {
+    color: var(--primary-hover);
+    text-shadow: var(--glow);
+  }
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+    &:hover {
+      text-shadow: none;
+    }
+  }
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+}

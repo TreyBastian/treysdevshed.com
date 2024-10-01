@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  gap: 1rem;
+  --social-height: 2.3rem;
+
+  a {
+    height: var(--social-height);
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      svg {
+        height: var(--social-height);
+        filter: drop-shadow(var(--glow));
+      }
+    }
+    svg {
+      height: calc(var(--social-height) - 0.5rem);
+      transition:
+        height 0.15s ease-in-out,
+        filter 0.15s ease-in-out;
+    }
+
+    @media (prefers-reduced-motion) {
+      svg {
+        transition: none;
+        filter: none;
+      }
+    }
+  }
+}
