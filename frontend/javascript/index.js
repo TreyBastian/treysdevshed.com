@@ -1,7 +1,14 @@
-import "$styles/index.css"
-import "$styles/syntax-highlighting.css"
+import "$styles/index.css";
+import "$styles/syntax-highlighting.css";
 
-// Import all JavaScript & CSS files from src/_components
-import components from "$components/**/*.{js,jsx,js.rb,css}"
-
-console.info("Bridgetown is loaded!")
+const burgerMenu = document.querySelector("header>button");
+burgerMenu.addEventListener("click", () => {
+  const isOpen = burgerMenu.getAttribute("aria-expanded") === "true";
+  burgerMenu.setAttribute("aria-expanded", !isOpen);
+  console.log(burgerMenu);
+  if (!isOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "initial";
+  }
+});
