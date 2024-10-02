@@ -17,6 +17,7 @@
     }
     svg {
       height: calc(var(--social-height) - 0.5rem);
+      will-change: filter;
       transition:
         height 0.15s ease-in-out,
         filter 0.15s ease-in-out;

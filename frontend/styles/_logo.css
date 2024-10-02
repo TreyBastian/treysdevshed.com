@@ -1,6 +1,16 @@
 .logo {
   height: 1rem;
   width: auto;
+  transition: filter 0.15s ease-in-out;
+  will-change: filter;
+
+  &:hover {
+    filter: drop-shadow(var(--glow));
+  }
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 
   svg {
     height: inherit;

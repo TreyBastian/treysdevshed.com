@@ -63,7 +63,6 @@ body {
     "Helvetica",
     "Arial",
     sans-serif;
-  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -91,4 +90,5 @@ main {
   width: 100%;
   margin: 0 auto;
   flex-grow: 1;
+  padding: 1.15rem;
 }
