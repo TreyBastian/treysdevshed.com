@@ -1,7 +1,8 @@
 .socials {
   display: flex;
-  gap: 1rem;
   --social-height: 2.3rem;
+  --social-gap: 1rem;
+  gap: var(--social-gap);
 
   a {
     height: var(--social-height);

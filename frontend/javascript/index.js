@@ -8,7 +8,15 @@ burgerMenu.addEventListener("click", () => {
   console.log(burgerMenu);
   if (!isOpen) {
     document.body.style.overflow = "hidden";
+    document.addEventListener("keyup", (e) => {
+      if (e.code === "Escape") {
+        burgerMenu.setAttribute("aria-expanded", false);
+        document.body.style.overflow = "initial";
+        document.removeEventListener("keyup");
+      }
+    });
   } else {
     document.body.style.overflow = "initial";
+    document.removeEventListener("keyup");
   }
 });

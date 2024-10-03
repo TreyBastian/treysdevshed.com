@@ -1,7 +1,12 @@
-footer {
+body > footer {
   display: flex;
   padding: 1rem 0;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+
+  .socials {
+    --social-height: 1.8rem;
+    --social-gap: 0.5rem;
+  }
 }
