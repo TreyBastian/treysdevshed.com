@@ -1,7 +1,8 @@
-<nav class="navbar" aria-role="navigation">
-  <a href="/" aria-label="Home">Home</a>
-  <a href="/news" aria-label="News">News</a>
-  <a href="/projects" aria-label="Projects">Projects</a>
-  <a href="/guides" aria-label="Guides">Guides</a>
-  <a href="/about" aria-label="About">About</a>
+<nav class="navbar">
+  <a href="/" aria-current="<%= resource.relative_url == '/' %>" aria-label="Home">Home</a>
+  <a href="/news" aria-current="<%= resource.relative_url.include? '/news' %>" aria-label="News">News</a>
+  <a href="/projects" aria-current="<%= resource.relative_url.include? '/projects' %>"
+    aria-label="Projects">Projects</a>
+  <a href="/guides" aria-current="<%= resource.relative_url.include? '/guides' %>" aria-label="Guides">Guides</a>
+  <a href="/about" aria-current="<%= resource.relative_url == '/about/' %>" aria-label="About">About</a>
 </nav>

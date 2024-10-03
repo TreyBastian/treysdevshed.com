@@ -3,24 +3,28 @@
 @import "_header.css";
 @import "_logo.css";
 @import "_navbar.css";
+@import "_list.css";
 
 :root {
   --devshed-blue: #000c19;
-  --devshed-blue-light: #003166;
+  --devshed-blue-light: #001124;
   --light-blue: #00b3d6;
   --light-blue-light: #0ad6ff;
   --black: #0a0a0a;
-  --white: #fafafa;
+  --white: #f5f5f5;
+  --white-darker: #fafafa;
   --border-radius: 0.75rem;
   --primary: var(--devshed-blue);
   --primary-inverse: var(--white);
   --primary-hover: var(--devshed-blue-light);
   --bg: var(--white);
+  --bg-secondary: var(--white-darker);
   --fg: var(--black);
   --glow: 0 0 1.5rem var(--light-blue);
-
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   @media (prefers-color-scheme: dark) {
     --bg: var(--devshed-blue);
+    --bg-secondary: var(--devshed-blue-light);
     --fg: var(--white);
     --primary: var(--light-blue);
     --primary-inverse: var(--black);
@@ -83,6 +87,28 @@ a {
       text-shadow: none;
     }
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @media (prefers-color-scheme: dark) {
+    text-shadow: var(--glow);
+  }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 main {

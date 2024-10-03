@@ -14,7 +14,7 @@
       text-shadow 0.15s ease-in-out;
 
     &:hover,
-    &[aria-current="page"] {
+    &[aria-current="true"] {
       font-weight: 800;
       color: inherit;
       text-shadow: var(--glow);

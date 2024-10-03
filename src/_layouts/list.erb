@@ -1,7 +1,32 @@
 ---
 layout: default
 ---
+<section class="list">
+  <header>
+    <h1>
+      <%= data.title %>
+    </h1>
+  </header>
 
-<h1><%= data.title %></h1>
+  <ul>
+    <% collections[data.collection].each do |post| %>
+      <li>
+        <a href="<%= post.relative_url %>">
 
-<%= yield %>
+          <article>
+            <% if post.data.image %>
+              <img src="/images/<%= post.data.image %>">
+              <% end %>
+                <section>
+                  <h2>
+                    <%= post.data.title %>
+                  </h2>
+
+                  <%= post.summary %>
+                </section>
+          </article>
+        </a>
+      </li>
+      <% end %>
+  </ul>
+</section>

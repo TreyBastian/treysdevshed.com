@@ -64,7 +64,7 @@ body > header {
   }
 
   @media (prefers-color-scheme: light) {
-    box-shadow: var(--glow);
+    box-shadow: var(--shadow);
   }
 
   .logo {
