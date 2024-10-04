@@ -20,8 +20,10 @@
   --bg: var(--white);
   --bg-secondary: var(--white-darker);
   --fg: var(--black);
-  --glow: 0 0 1.5rem var(--light-blue);
+  --glow: drop-shadow(0 1px 8px var(--light-blue));
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --glow-shadow: 0 1px 3px 1px var(--light-blue),
+    0 1px 2px 1px var(--light-blue);
   @media (prefers-color-scheme: dark) {
     --bg: var(--devshed-blue);
     --bg-secondary: var(--devshed-blue-light);
@@ -75,16 +77,17 @@ a {
   color: var(--primary);
   transition:
     color 0.15s ease-in-out,
-    shadow 0.15s ease-in-out;
+    filter 0.15s ease-in-out;
+  will-change: filter;
   &:hover {
     color: var(--primary-hover);
-    text-shadow: var(--glow);
+    filter: var(--glow);
   }
 
   @media (prefers-reduced-motion) {
     transition: none;
     &:hover {
-      text-shadow: none;
+      filter: none;
     }
   }
 }
@@ -96,7 +99,7 @@ h4,
 h5,
 h6 {
   @media (prefers-color-scheme: dark) {
-    text-shadow: var(--glow);
+    filter: var(--glow);
   }
 }
 

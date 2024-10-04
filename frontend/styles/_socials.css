@@ -3,6 +3,8 @@
   --social-height: 2.3rem;
   --social-gap: 1rem;
   gap: var(--social-gap);
+  display: flex;
+  align-items: center;
 
   a {
     height: var(--social-height);
@@ -13,7 +15,7 @@
     &:hover {
       svg {
         height: var(--social-height);
-        filter: drop-shadow(var(--glow));
+        filter: var(--glow);
       }
     }
     svg {

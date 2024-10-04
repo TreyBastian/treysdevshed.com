@@ -5,7 +5,7 @@
   will-change: filter;
 
   &:hover {
-    filter: drop-shadow(var(--glow));
+    filter: var(--glow);
   }
 
   @media (prefers-reduced-motion) {

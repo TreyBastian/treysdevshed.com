@@ -9,15 +9,16 @@
     color: inherit;
     font-weight: 600;
     text-decoration: none;
+    will-change: filter;
     transition:
       font-weight 0.15s ease-in-out,
-      text-shadow 0.15s ease-in-out;
+      filter 0.15s ease-in-out;
 
     &:hover,
     &[aria-current="true"] {
       font-weight: 800;
       color: inherit;
-      text-shadow: var(--glow);
+      filter: var(--glow);
     }
 
     &::before {
@@ -31,7 +32,7 @@
 
     @media (prefers-reduced-motion) {
       transition: none;
-      text-shadow: none;
+      filter: none;
     }
   }
 }

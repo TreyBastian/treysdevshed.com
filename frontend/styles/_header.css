@@ -13,6 +13,7 @@ body > header {
   }
 
   section {
+    height: 100%;
     flex-grow: 1;
     position: fixed;
     z-index: 1;
@@ -45,10 +46,12 @@ body > header {
       color: inherit;
     }
     .socials {
+      height: 100%;
       --social-height: 2rem;
     }
 
     .navbar {
+      height: 100%;
       flex-grow: 1;
       @media (max-width: 1023px) {
         flex-direction: column;
