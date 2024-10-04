@@ -1,13 +1,5 @@
 collections:
-  news:
-    output: true
-    permalink: pretty 
-    name: News
-  projects:
-    output: true
-    permalink: simple 
-    name: Projects
-  guides:
-    output: true
-    permalink: simple 
-    name: Guides
+    projects:
+      output: true
+      permalink: simple 
+      name: Projects

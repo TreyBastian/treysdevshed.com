@@ -3,6 +3,7 @@
   width: auto;
   transition: filter 0.15s ease-in-out;
   will-change: filter;
+  animation: flicker 5s infinite;
 
   &:hover {
     filter: var(--glow);
@@ -10,10 +11,26 @@
 
   @media (prefers-reduced-motion) {
     transition: none;
+    animation: none;
   }
 
   svg {
     height: inherit;
     width: inherit;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    filter: none;
+  }
+  22% {
+    filter: var(--glow);
+  }
+  28% {
+    filter: none;
+  }
+  30% {
+    filter: var(--glow);
   }
 }

@@ -4,15 +4,14 @@ layout: default
 <section class="list">
   <header>
     <h1>
-      <%= data.title %>
+      The lastest from the shed
     </h1>
   </header>
 
   <ul>
-    <% collections.posts.select {|p| p.data.category && p.data.category==data.category }.each do |post| %>
+    <% collections.posts.each do |post| %>
       <li>
         <a href="<%= post.relative_url %>">
-
           <article>
             <% if post.data.image %>
               <img src="/images/<%= post.data.image %>">
@@ -22,6 +21,7 @@ layout: default
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   <% end %>
+
                     <section>
                       <h2>
                         <%= post.data.title %>

@@ -1,6 +1,7 @@
 ---
 layout: post
-image: youtube_thumbnail.png
+youtube: https://www.youtube.com/embed/dQw4w9WgXcQ?si=0zARMvb4ZRbnQvYh
+category: guides
 ---
 We are open for business. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus odio sit amet nulla lobortis, ac pulvinar enim molestie. Ut at efficitur est, ac rhoncus eros. Quisque commodo lacus nisi, sit amet tempor odio interdum sed. Fusce porttitor eros et dolor tincidunt, sed vestibulum arcu suscipit. Quisque nec eros vehicula, sollicitudin lacus ac, faucibus magna. Nullam malesuada diam vitae purus viverra, gravida pulvinar orci pulvinar. Praesent sapien neque, vehicula a turpis eu, lacinia bibendum ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id massa imperdiet, pulvinar purus vel, tristique arcu.
 

@@ -4,6 +4,7 @@
 @import "_logo.css";
 @import "_navbar.css";
 @import "_list.css";
+@import "_post.css";
 
 :root {
   --devshed-blue: #000c19;
@@ -41,6 +42,12 @@ html {
 
   text-size-adjust: 100%;
   font-smooth: antialiased;
+}
+
+iframe {
+  width: 100%;
+  border-radius: var(--border-radius);
+  aspect-ratio: 16/9;
 }
 
 *,
@@ -112,6 +119,10 @@ svg {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+img {
+  border-radius: var(--border-radius);
 }
 
 main {

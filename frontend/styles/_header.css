@@ -46,7 +46,9 @@ body > header {
       color: inherit;
     }
     .socials {
-      height: 100%;
+      @media (min-width: 1024px) {
+        height: 100%;
+      }
       --social-height: 2rem;
     }
 
