@@ -1,3 +1,6 @@
+feed:
+  template: src/_layouts/feed.xml
+url: https://treysdevshed.com
 collections:
     projects:
       output: true

@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/TreyBastian/bridgetown-feed.git
+  revision: aa4fff9d3bb89ded75fd6edfb49c1ac77d8a31df
+  specs:
+    bridgetown-feed (3.1.2)
+      bridgetown (>= 1.2.0.beta2, < 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -146,6 +153,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 2.0.0.beta2)
+  bridgetown-feed!
   puma (< 7)
 
 BUNDLED WITH

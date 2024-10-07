@@ -14,12 +14,14 @@
 # For reloadable site metadata like title, SEO description, social media
 # handles, etc., take a look at `src/_data/site_metadata.yml`
 
-Bridgetown.configure do |config|
+Bridgetown.configure do |_config|
   # The base hostname & protocol for your site, e.g. https://example.com
   url ''
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine 'erb'
+
+  init :"bridgetown-feed"
 
   # Other options you might want to investigate:
 

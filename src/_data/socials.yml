@@ -18,6 +18,6 @@
   url: https://buymeacoffee.com/treysdevshed
   icon: buy-me-a-coffee
 
-- name: RSS
-  url: /rss
+- name: RSS / Atom Feed
+  url: /feed.xml
   icon: rss
