@@ -22,6 +22,7 @@ Bridgetown.configure do |_config|
   template_engine 'erb'
 
   init :"bridgetown-feed"
+  init :"bridgetown-content-security-policy"
 
   # Other options you might want to investigate:
 

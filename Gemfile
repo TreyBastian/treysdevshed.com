@@ -36,3 +36,5 @@ gem 'puma', '< 7'
 # gem "nokolexbor", "~> 0.5"
 
 gem 'bridgetown-feed', git: 'https://github.com/TreyBastian/bridgetown-feed.git'
+
+gem "bridgetown-content-security-policy", "~> 2.0"

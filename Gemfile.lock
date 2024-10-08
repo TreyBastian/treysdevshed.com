@@ -31,6 +31,8 @@ GEM
       bridgetown-paginate (= 2.0.0.beta2)
     bridgetown-builder (2.0.0.beta2)
       bridgetown-core (= 2.0.0.beta2)
+    bridgetown-content-security-policy (2.0.0)
+      bridgetown (>= 1.2.0, < 2.0)
     bridgetown-core (2.0.0.beta2)
       activesupport (>= 6.0, < 8.0)
       addressable (~> 2.4)
@@ -153,6 +155,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 2.0.0.beta2)
+  bridgetown-content-security-policy (~> 2.0)
   bridgetown-feed!
   puma (< 7)
 
