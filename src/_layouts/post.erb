@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post">
   <% if data.image %>
-    <img src="/images/<%= data.image %>" />
+    <img src="<%= asset_path '/images/#{data.image}' %>" />
     <% end %>
       <% if data.youtube %>
         <iframe src="https://www.youtube.com/embed/<%= data.youtube %>" title="YouTube video player" frameborder="0"
