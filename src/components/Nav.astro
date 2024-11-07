@@ -1,0 +1,25 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<nav>
+  <HeaderLink href="/" aria-label="Home">Home</HeaderLink>
+  <HeaderLink href="/news" aria-label="News">News</HeaderLink>
+  <HeaderLink href="/arojects" aria-label="Projects">Projects</HeaderLink>
+  <HeaderLink href="/guides" aria-label="Guides">Guides</HeaderLink>
+  <HeaderLink href="/about" aria-label="About">About</HeaderLink>
+</nav>
+<style>
+  nav {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+
+    @media (min-width: 64em) {
+      flex-direction: row;
+    }
+  }
+</style>

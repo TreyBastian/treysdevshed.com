@@ -1,25 +1,46 @@
 ---
-import type { HTMLAttributes } from 'astro/types';
+import type { HTMLAttributes } from "astro/types";
 
-type Props = HTMLAttributes<'a'>;
+type Props = HTMLAttributes<"a">;
 
-const { href, class: className, ...props } = Astro.props;
+const props = Astro.props;
 
 const { pathname } = Astro.url;
-const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + subpath?.[0];
+const subpath = pathname.match(/[^/]+/g);
+const isActive = props.href === pathname || props.href === "/" + subpath?.[0];
 ---
 
-<a href={href} class:list={[className, { active: isActive }]} {...props}>
-	<slot />
+<a aria-current={isActive} {...props}>
+  <slot />
 </a>
 <style>
-	a {
-		display: inline-block;
-		text-decoration: none;
-	}
-	a.active {
-		font-weight: bolder;
-		text-decoration: underline;
-	}
+  a {
+    font-size: 2em;
+    flex-shrink: 0;
+    color: inherit;
+    font-weight: 600;
+    transition:
+      font-weight 0.15s ease-in-out,
+      filter 0.15s ease-in-out;
+
+    @media (min-width: 64em) {
+      font-size: 1.5em;
+    }
+
+    &:hover,
+    &[aria-current="true"] {
+      font-weight: 800;
+      color: inherit;
+      filter: var(--glow);
+    }
+
+    &::before {
+      display: block;
+      content: attr(aria-label);
+      font-weight: 800;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
 </style>

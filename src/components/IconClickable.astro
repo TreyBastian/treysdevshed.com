@@ -1,0 +1,43 @@
+---
+const { Element, size, ...props } = Astro.props;
+---
+
+<Element style={`--size:${size}`} {...props}>
+  <slot />
+</Element>
+
+<style>
+  button,
+  a {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    height: var(--size);
+    aspect-ratio: 1/1;
+    z-index: 2;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: inherit;
+      aspect-ratio: 1/1;
+      height: calc(var(--size) * 0.8);
+      transition:
+        height 0.15s ease-in-out,
+        filter 0.15s ease-in-out;
+      will-change: filter;
+
+      &media(prefers-reduced-motion) {
+        transition: none;
+      }
+    }
+
+    &:hover {
+      svg {
+        height: var(--size);
+        filter: var(--glow);
+      }
+    }
+  }
+</style>
