@@ -8,7 +8,7 @@ import Icons from "unplugin-icons/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://treysdevshed.com",
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [
@@ -19,4 +19,3 @@ export default defineConfig({
     ],
   },
 });
-

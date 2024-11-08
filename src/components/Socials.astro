@@ -1,7 +1,70 @@
 ---
 import IconClickable from "./IconClickable.astro";
+import LogosX from "~icons/logos/x";
+import LogosBluesky from "~icons/logos/bluesky";
+import LogosYoutube from "~icons/logos/youtube-icon";
+import TwitchIcon from "./TwitchIcon.astro";
+import BuyMeACoffeeIcon from "./BuyMeACoffeeIcon.astro";
+import SkillIconsDiscord from "~icons/skill-icons/discord";
+
+const iconSize = "2em";
 ---
 
 <nav aria-label="Social Media Links">
-  <IconClickable size="4em" Element="a">Test</IconClickable>
+  <IconClickable
+    size={iconSize}
+    Element="a"
+    target="_blank"
+    href="https://twitch.tv/treybastian"
+  >
+    <TwitchIcon />
+  </IconClickable>
+  <IconClickable
+    size={iconSize}
+    Element="a"
+    target="_blank"
+    href="https://youtube.com/@treybastian"
+  >
+    <LogosYoutube />
+  </IconClickable>
+  <IconClickable
+    size={iconSize}
+    Element="a"
+    target="_blank"
+    href="https://bsky.app/treysdevshed.com"
+  >
+    <LogosBluesky />
+  </IconClickable>
+
+  <IconClickable
+    size={iconSize}
+    Element="a"
+    target="_blank"
+    href="https://x.com/treybastian"
+  >
+    <LogosX style="fill: var(--fg)" />
+  </IconClickable>
+  <IconClickable
+    size={iconSize}
+    Element="a"
+    target="_blank"
+    href="https://discord.gg/VwRDZAn7P6"
+  >
+    <SkillIconsDiscord />
+  </IconClickable>
+  <IconClickable
+    size={iconSize}
+    Element="a"
+    target="_blank"
+    href="https://buymeacoffee.com/treysdevshed"
+  >
+    <BuyMeACoffeeIcon />
+  </IconClickable>
 </nav>
+
+<style>
+  nav {
+    display: flex;
+    gap: 0.5em;
+  }
+</style>
